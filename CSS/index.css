@@ -628,6 +628,7 @@ margin-left: 10%;
        height: auto;
 
     }
+
     .container5 {
         flex-direction: column;
         align-items: center;
@@ -647,10 +648,6 @@ margin-left: 10%;
     .container5 .left, .container5 .right {
         width: 80%;
     }
-    .container5 .right
-    {
-        margin-left: 20%;
-    }
     .right h1 {
         font-size: 35px;
         text-align: center;
@@ -658,6 +655,7 @@ margin-left: 10%;
     }
 
     .dots {
+        width: 100%;
         align-items: center;
     }
     .box1, .box2, .box3 {
@@ -801,6 +799,11 @@ margin-left: 10%;
         padding: 8px 20px;
         font-size: 12px;
     }
+    .choosepoint1 img
+{
+    width: 52px;
+    height: 52px;
+}
     .headers {
         width: 90%;
     }
