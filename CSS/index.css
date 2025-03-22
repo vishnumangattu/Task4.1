@@ -14,30 +14,41 @@
 .container1
 {
     width: 100%;
-    height: 80vh;
+    height: auto;
     background-color: rgb(0, 0, 0);
     background-image:url('../IMAGES/images/Mask\ Group\ 209.png') ;
+    padding:0 0 2% 0%;
 }
 .top{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: start;
+    /* background-color: #EC6754; */
 }
 .top img
 {
 position: relative;
-top: 42px;
-left: 62px;
-width: 166px;
-height: 139px;
+width: 100%;
+height: 100%;
+}
+.logo
+{
+    position: relative;
+    width: 12%;
+    height: 80%;
+    margin-top: 1%;
+    left: 5%;
 }
 .top button
 {
  position: relative;
-top: 52px;
-right: 62px;
-width: 123px;
-height: 88px;
+/* top: 52px;
+right: 5%; */
+margin: 2% 3% 0 0;
+width: 93px;
+height: 66px;
 background: #1B1A18 0% 0% no-repeat padding-box;
 color: #ffffff;
 border: 3px solid #FFFFFF;
@@ -278,6 +289,8 @@ align-items: center;
 }
 .contentside h3{
     font-size: 40px;
+    margin-bottom: 0%;
+    flex-shrink: 0;
 }
 .data
 {
@@ -291,7 +304,12 @@ align-items: center;
     background-color: #FFFFFF;
     width: 50%;
     height: 3px;
-    margin-bottom: 15px;
+    flex:1
+    
+    /* margin-bottom: 15px; */
+}
+.data input{
+
 }
 .innerbox button
 {
@@ -569,7 +587,7 @@ margin-left: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
 }
 .bll,
@@ -580,12 +598,16 @@ margin-left: 10%;
     justify-content: center;
     align-items: start;
     text-align: left;
+}   
+.brr
+{
+    margin-left: 20px;
+    flex-wrap: wrap;
 }
-
 /* Social Icons */
 .social {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 10px;
 }
 .social img {
@@ -611,6 +633,12 @@ margin-left: 10%;
 
 
 
+
+
+
+
+
+
 @media (max-width: 1024px) {
     .content {
         width: 90%;
@@ -618,7 +646,7 @@ margin-left: 10%;
     }
     .container1
     {
-        padding: 10% 0% ;
+        padding: 2% 0% 10% 0% ;
     }
     .content h3 {
         font-size: 40px;
@@ -698,6 +726,11 @@ margin-left: 10%;
     }
 }
 
+
+
+
+
+
 @media (max-width: 768px) {
     .top {
         /* flex-direction: column; */
@@ -710,17 +743,27 @@ margin-left: 10%;
         width: 62px;
         height: 44px;
         font-size: 12px;
-        display: none;
+        border: none;
+        /* display: none; */
     }
     .container2{
         flex-direction: column;
+
+        
+    }
+    .container2 p{
+        line-height: 25px;
     }
     .container2 div
     {
         
         /* border: hidden; */
         text-align: center;
-        padding:20px
+        width: 100%;
+        padding:20px 20px  0px 20px
+    }
+    .box1, .box2, .box3 {
+        padding-bottom: 0px;
     }
     .content h3 {
         font-size: 32px;
@@ -771,6 +814,8 @@ margin-left: 10%;
     }
     .contentside h3 {
         font-size: 22px;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
     }
     .data div {
         width: 60%;
@@ -779,6 +824,13 @@ margin-left: 10%;
         padding: 10px 30px;
     }
 }
+
+
+
+
+
+
+
 
 @media (max-width: 480px) {
     .content h3 {
@@ -843,9 +895,11 @@ margin-left: 10%;
     }
     .contentside h3 {
         font-size: 20px;
+        margin-bottom: 0%;
     }
     .data div {
         width: 70%;
+        margin-bottom: 0%;
     }
     .innerbox button {
         width: 100%;
@@ -864,13 +918,19 @@ margin-left: 10%;
         width: 20%;
     }
     .bottomside{
-        gap:20%
+        gap:10%
         
     }
     .bll,
     .brr {
-        width: 20%;
-        align-items: center;
+        width: 30%;
+
+        /* background-color: #EC6754; */
+        /* align-items: center; */
+    }
+    .brr
+    {
+        align-items: start;
     }
 }
 
@@ -880,12 +940,7 @@ margin-left: 10%;
         width: 100%;
         padding: 0 20px;
     }
-    .topside,
-    .bottomside {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+   
     .footer {
         text-align: center;
     }
@@ -893,4 +948,28 @@ margin-left: 10%;
         width: 35px;
         height: 35px;
     }
+    .brr p {
+        padding-right: 10px
+        
+    };
+}
+@media (max-width: 470px) {
+ .topside,
+    .bottomside {
+        /* flex-direction: column; */
+        align-items: center; 
+        justify-content: center;
+        text-align: start;
+        margin-left: 0%;
+     }
+     .bottomside {
+        gap: 5px;
+        flex-wrap: wrap;
+     }
+    .rightside
+    {
+        width: 100%;
+       padding: 0%;
+    }
+   
 }
