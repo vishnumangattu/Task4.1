@@ -22,10 +22,11 @@
 .top{
     position: relative;
     width: 100%;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: start;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
     /* background-color: #EC6754; */
 }
 .top img
@@ -92,7 +93,6 @@ font-family: "Poppins", sans-serif;
     border: 2px solid rgb(255, 255, 255);
     color: white;
     font-weight: bold;
-    margin: 10px 0px 0px 0px;
 }
 .container2
 {
