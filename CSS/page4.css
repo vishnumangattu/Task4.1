@@ -481,7 +481,6 @@ align-items: center;
 }   
 .brr
 {
-    /* margin-left: 20px; */
     flex-wrap: wrap;
     margin-top: 20%;
 }
@@ -814,4 +813,37 @@ align-items: center;
         width: 35px;
         height: 35px;
     }
+}
+@media (max-width: 478px) {
+    
+    .lll{
+        width: 40%;
+    }
+    .rrr{
+        width: 60%;
+    }
+
+.rrr h6
+{
+    margin-top: 0%;
+}
+
+.brr h6
+{
+    margin-top: 0px;
+}
+.brr{
+    margin-top: 0px;
+}
+.rrr p
+{
+    line-height: 0px;
+}
+.lll img{
+    margin-top: 0px;
+}
+.rrr input {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 }
